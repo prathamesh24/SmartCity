@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#383838"
+                android:flipInterval="3000"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right" >
+            </ViewFlipper>
+
+            <RelativeLayout
+                android:id="@+id/news"
+                android:layout_width="match_parent"
+                android:background="#3F51B5"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/dmmy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="News"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+                <ImageView 
+                    android:id="@+id/newsimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/dmmy"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/news"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/marquee"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#3F51B5"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@android:color/white" />
+
+            <RelativeLayout
+                android:id="@+id/searchlay"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#3F51B5" >
+
+                <EditText
+                    android:id="@+id/searchbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="85dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/white" />
+
+                <Button
+                    android:id="@+id/sendSearch"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#3F51B5"
+                    android:text="Search"
+                    />
+            </RelativeLayout>
+
+            <com.smartcity.widgets.HorizontalListView
+                android:id="@+id/newslist"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="200dp" >
+            </com.smartcity.widgets.HorizontalListView>
+            
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/mygallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <com.smartcity.widgets.HorizontalListView
+                android:id="@+id/bannerlist"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+            </com.smartcity.widgets.HorizontalListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

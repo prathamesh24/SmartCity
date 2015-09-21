@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Click Mee</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">Welcom To</string>
+    <string name="title_activity_splash_screen">"YOUR ONE CLICK CAN CHANGE YOUR LIFE"</string>
+    <string name="home">Home</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate us</string>
+    <string name="aboutus">About Us</string>
+    <string name="title_activity_registration">Register here</string>
+    <string name="name">Full Name</string>
+    <string name="add">Address</string>
+    <string name="email">Email address</string>
+    <string name="number">Mobile number</string>
+    <string name="reg">Submit</string>
+    <string name="title_activity_media">Media</string>
+    <string name="title_activity_politian_list">Politian_list</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="call1">Emergency</string>
+    <string name="call2">About us</string>
+    <string name="call3">SOS</string>
+    <string name="call4">Business Partner</string>
+	<string name="alert_dialog_success">Device Registered to GCM Server</string>
+    <string name="alert_dialog_failed">Network Error try later</string>
+</resources>
